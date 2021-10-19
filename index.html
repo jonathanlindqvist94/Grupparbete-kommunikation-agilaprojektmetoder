@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Skapa konto</title>
+</head>
+
+<body>
+    
+    <div class="card">
+        <div class="top-text-holder">
+            <h1 class="title">Välkommen</h1>
+                <p class="info-text">Välkommen till jobbtinder! Detta är en plats där man både som arbetsgivare och arbetssökande på ett smidigt och enkelt sätt få kontakt med</p>
+        </div>
+
+        <form action="profil.html" method="get">
+            <h2 class="form-title">Skapa konto</h2>
+
+            <div class="name-holder">
+                <div class="f-name-holder">
+                    <label for="förnamn">Förnamn</label>
+                    <input id="förnamn" type="text" placeholder="Förnamn" required>
+                </div>
+                
+                <div class="l-name-holder">
+                    <label for="efternamn">Efternamn</label>
+                    <input id="efternamn" type="text" placeholder="Efternamn" required>
+                </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required>
+
+            <div class="password-container">
+                <div class="password-holder">
+                    <label for="password">Lösenord</label>
+                    <input id="password" class="password" type="password" placeholder="Lösenord" required>
+                </div>
+                
+                <div class="repeat-password-holder">
+                    <label for="repeat-password">Lösenord</label>
+                    <input id="repeat-password" class="confirm-password" type="password" placeholder="Repetera Lösenord" required>
+                </div>
+            </div>
+                <p class="message"></p>
+
+            <div class="checkbox-holder">
+                <input type="checkbox" required>
+                <small class="check-agree">I agree to <a class="terms" href="#">Terms of Use</a></small>
+            </div>
+
+            <button type="submit" value="skapa konto" class="btn btn-main">Skapa konto</button>
+            
+        </form>
+        <!-- <button class="btn btn-bankid">Logga in med bankdID</button> -->
+        <div class="bottom-text">
+            <small>Har du redan ett konto?</small>
+            <span><a class="logga-in" href="#">Logga in här</a></span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

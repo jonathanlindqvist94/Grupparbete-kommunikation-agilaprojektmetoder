@@ -1,0 +1,258 @@
+f*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+/* Typo */
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 10%, 7rem);
+}
+
+.message {
+    width: max-content;
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin: .75rem 0 1rem;
+}
+
+.check-agree {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    color: white;
+}
+
+.terms,
+.logga-in {
+    transition: 150ms;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.terms {
+    color:#ffe54c;
+    font-weight: 700;
+}
+
+.logga-in {
+    color: #ffe54c;
+    font-weight: 700;
+}
+
+
+.terms:hover,
+.terms:focus,
+.logga-in:hover,
+.logga-in:focus {
+    opacity: .6;
+}
+
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: .75em;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.bottom-text-login,
+.bottom-text-register {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75em;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: black;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Layout */
+.card {
+    width: 85%;
+    max-width: 620px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #909090;
+    background-image: url(../img/lisha-riabinina-bNcQRxaIFww-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.name-holder,
+.password-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-name-holder,
+.l-name-holder,
+.password-holder,
+.repeat-password-holder {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkbox-holder {
+    display: flex;
+    align-items: center;
+}
+
+.top-text-holder {
+    width: 95%;
+    margin: 0 auto;
+    /* margin-bottom: 2rem; */
+    padding: 2rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* FORM */
+
+form,
+section {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .password-holder {
+    position: relative;
+    width: 100%;
+} */
+
+input {
+    border: none;
+    outline: none;
+    padding: .75em;
+    background: hsl(0, 0%, 44%, .85);
+    border-radius: 10px;
+}
+
+label {
+    margin: 1.5rem 0 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    margin-right: .25rem;
+}
+
+.eye {
+    position: relative;
+}
+
+
+/* form Buttons */
+
+.btn-main {
+    padding: .75em 1.75em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.75rem;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    position: relative;
+    background: #ffe54c;
+    transform: rotate(-2deg);
+    cursor: pointer;
+
+}
+
+.btn-main::after{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    height: 100%;
+    bottom: 10px;
+    left: 10px;
+    transition: 250ms;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.btn-main:focus {
+    outline: 0;
+}
+
+.btn-main:hover::after,
+.btn-main:focus::after{
+    bottom: 2px;
+    left: 2px;
+
+}
+
+
+.btn-main {
+    margin: 4rem 0 3rem;
+    max-width: 400px;
+}
+
+.btn-bankid {
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 250px;
+    margin-bottom: .75rem;
+}
