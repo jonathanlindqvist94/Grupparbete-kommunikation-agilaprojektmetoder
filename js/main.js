@@ -1,5 +1,3 @@
-const button = document.querySelector('.btn-main');
-
 // button.addEventListener('click', checkPassword = (event) => {
 //     const password = document.querySelector('.password').value;
 //     const confirmPassword = document.querySelector('.confirm-password').value;
@@ -26,6 +24,8 @@ const button = document.querySelector('.btn-main');
 //     }
 // });
 
+const button = document.querySelector('.btn-main');
+
 button.addEventListener('click', checkPassword = (event) => {
     const password = document.querySelector('.password').value;
     const confirmPassword = document.querySelector('.confirm-password').value;
@@ -39,7 +39,7 @@ button.addEventListener('click', checkPassword = (event) => {
         return;
     }
 
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
         msg.textContent = "Passwords don't match!";
         msg.style.backgroundColor = "#ff4d4d";
         msg.style.padding = ".5em 1.5em";

@@ -11,6 +11,7 @@ f*,
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5rem;
+    background: #262626;
 }
 
 button {
@@ -148,13 +149,6 @@ a {
 
 
 
-
-
-
-
-
-
-
 /* FORM */
 
 form,
@@ -256,3 +250,6 @@ input[type="checkbox"] {
     max-width: 250px;
     margin-bottom: .75rem;
 }
+
+
+
